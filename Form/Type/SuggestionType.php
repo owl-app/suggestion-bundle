@@ -22,6 +22,11 @@ final class SuggestionType extends AbstractResourceType
             ));
     }
 
+    /**
+     * @return string
+     *
+     * @psalm-return 'owl_suggestion'
+     */
     public function getBlockPrefix(): string
     {
         return 'owl_suggestion';

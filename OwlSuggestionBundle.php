@@ -18,6 +18,11 @@ use Sylius\Bundle\ResourceBundle\SyliusResourceBundle;
 
 final class OwlSuggestionBundle extends AbstractResourceBundle
 {
+    /**
+     * @return string[]
+     *
+     * @psalm-return list{'doctrine/orm'}
+     */
     public function getSupportedDrivers(): array
     {
         return [
@@ -27,6 +32,10 @@ final class OwlSuggestionBundle extends AbstractResourceBundle
 
     /**
      * @psalm-suppress MismatchingDocblockReturnType https://github.com/vimeo/psalm/issues/2345
+     *
+     * @return string
+     *
+     * @psalm-return 'Owl\Component\Suggestion\Model'
      */
     protected function getModelNamespace(): string
     {
