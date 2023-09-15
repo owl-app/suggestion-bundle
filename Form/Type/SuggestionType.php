@@ -17,14 +17,12 @@ final class SuggestionType extends AbstractResourceType
             ->add('title', TextType::class, [
                 'label' => 'owl.form.common.name',
             ])
-            ->add('description', TextareaType::class, array(
-                'label' => 'owl.form.common.description'
-            ));
+            ->add('description', TextareaType::class, [
+                'label' => 'owl.form.common.description',
+            ]);
     }
 
     /**
-     * @return string
-     *
      * @psalm-return 'owl_suggestion'
      */
     public function getBlockPrefix(): string

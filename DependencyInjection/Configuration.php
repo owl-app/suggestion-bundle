@@ -6,9 +6,8 @@ namespace Owl\Bundle\SuggestionBundle\DependencyInjection;
 
 use Owl\Bridge\SyliusResource\Controller\BaseController;
 use Owl\Bundle\SuggestionBundle\Form\Type\SuggestionType;
-use Sylius\Bundle\ResourceBundle\SyliusResourceBundle;
 use Owl\Component\Suggestion\Model\Suggestion;
-use Owl\Component\Suggestion\Model\SuggestionInterface;
+use Sylius\Bundle\ResourceBundle\SyliusResourceBundle;
 use Sylius\Component\Resource\Factory\Factory;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
